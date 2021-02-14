@@ -1,0 +1,46 @@
+<!-- ESTE ES EL HTML DEL PROYECTO #1 DE DESARROLLO WEB II
+     JAIRO PEREZ
+     C.I.28336214 -->
+
+<html>
+<head>
+
+<!-- AQUI SE COLOCA EL TITULO -->
+<title>Register WEBII</title>
+
+<!-- AQUI SE HACE LA CONEXION CON EL ARCHIVO CSS -->
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="hero">
+<div class="form-box">
+
+<!-- AQUI SE CONECTA CON EL SERVLET Y SE DEFINE QUE SE UTILIZARA doPost -->
+<form action="register" method="post" >
+  
+ <!-- AQUI SE COLOCAN LOS CAMPOS QUE SE LLENARAN EN EL FORM
+      SE DEFINEN SUS CLASES Y EL NOMBRE QUE TENDRAN PARA EL SERVLET --> 
+<input type="text" class="input-field" placeholder="Nombre Completo" name="userName"/><br/><br/>
+<input type="password" class="input-field" placeholder="Contrasena" name="userPass"/><br/><br/>
+<input type="text" class="input-field" placeholder="Direccion de Correo Electronico" name="userEmail"/><br/><br/>
+<input type="text" class="input-field" placeholder="C.I" name="userCI"/><br/><br/>
+<input type="text" class="input-field" placeholder="Nro de Telefono" name="userTLFnumber"/><br/>
+<br/><p style="color: #999;" align="center">Pais de Residencia</p><select class="select-field" name="userCountry">
+<option>Chile</option>
+<option>Espana</option>
+<option>USA</option>
+<option>Venezuela</option>
+<option>Otro</option>
+</select><br/><br/>
+
+<!-- ESTE ES EL SUBMIT DEL FORM -->
+<br/><input type="submit" class="submit-btn" value="Registrar"/>
+
+</form>
+
+</div>
+</div>
+
+</body>
+</html>
